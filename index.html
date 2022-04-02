@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+    <header>
+        <h1>Etch-a-Sketch</h1>
+    </header>
+    <main>
+        <div class="toolbar">
+            <div class="penColorDiv">
+                <input class="penColor colorPicker" type="color" id="penColor" value="#36311a">
+                <p>Pen Color</p>
+            </div>
+            <button id="colorModeBtn">Color Mode</button>
+            <button id="rainbowModeBtn">Rainbow Mode</button>
+            <button id="eraserBtn">Eraser</button>
+            <button id="clearBtn">Clear</button>
+            <div class="gridSize">
+                <p class="gridSizeLabel">Grid Size: 16 x 16</p>
+                <input type="range" id="range" value="16" min="1" max="64">
+            </div>
+            <button class="hideGridBtn" id="hideGridBtn">Hide Grid</button>
+        </div>
+        <div class="gridContainer">
+            
+        </div>
+    </main>
+    <footer>
+        <p>Copyrights &copy; 2022 FaDiiiLeo <a href="https://github.com/FaDiiiLeo" target="_blank">
+            <img src="images/GitHub-Mark-Light-32px.png" alt="github"></a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
