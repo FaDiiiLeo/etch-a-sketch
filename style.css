@@ -198,3 +198,52 @@ footer p a{
 footer p img:hover{
     transform: rotate(360deg) scale(1.1);
 }
+
+/* Breakpoints for Responsive Webpage */
+
+@media all and (max-width: 970px) {
+    html, body{
+        height: 120vh;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .toolbar{
+        flex-direction: row;
+        width: 600px;
+        margin-right: 0;
+        margin: 20px 0px; 
+        padding: 10px 0px;
+    }
+    .toolbar > *{
+        margin-top: 0;
+        margin-right: 10px;
+    }
+    .penColorDiv{
+        margin-left: 10px;
+    }
+    .gridSize > *{
+        width: 80px;
+    }
+    footer{
+        margin: 10px 0px;
+    }
+}
+
+@media all and (max-width: 615px){
+    .toolbar{
+        flex-direction: column;
+        width: 300px;
+    }
+    .toolbar > *{
+        margin-top: 10px;
+    }
+    .gridSize > *{
+        width: inherit;
+    }
+    .gridContainer{
+        flex-wrap: wrap;
+    }
+}
